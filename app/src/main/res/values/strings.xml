@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Wine</string>
+    <string name="name">Nome</string>
+    <string name="type">Tipo</string>
+    <string name="add_wine_button_text">Adicionar Vinho</string>
+</resources>
