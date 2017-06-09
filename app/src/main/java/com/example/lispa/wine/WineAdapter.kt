@@ -47,7 +47,7 @@ class WineAdapter (var wines :MutableList<Wine>) : RecyclerView.Adapter<WineAdap
                     override fun onResponse(call: Call<Wine>, response: Response<Wine>) {
                         if(response.isSuccessful){
                             Toast.makeText(context, "Deu certo excluir", Toast.LENGTH_SHORT).show()
-                            WineSingleton.removeWine(wine)
+//                            WineSingleton.removeWine(wine)
                             notifyItemRemoved(layoutPosition)
                         }
                     }

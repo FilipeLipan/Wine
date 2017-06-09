@@ -28,7 +28,7 @@ class AddWineFragment() : AppFragment() {
 //            WineSingleton.addWine(Wine(et_name.text.toString(), et_type.text.toString()))
 
             val wine: Wine = Wine(view.et_name.text.toString(), view.et_type.text.toString(),
-                    view.et_temperature.text as Int, view.et_shelf_life.text as Int, view.et_crop.text as Int)
+                    view.et_temperature.text.toString().toInt(), view.et_shelf_life.text.toString().toInt(), view.et_crop.text.toString().toInt())
 
             RestClient.restApi!!.saveWine(wine).enqueue(object : Callback<ResponseBody> {
                 override fun onResponse(call: Call<ResponseBody>, response: Response<ResponseBody>) {
