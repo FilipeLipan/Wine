@@ -13,6 +13,24 @@
         style="@style/Edit"
         android:id="@+id/et_name"
         android:hint="@string/name"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Edit"
+        android:id="@+id/et_type"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/corte"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
@@ -20,9 +38,55 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/Edit"
-        android:id="@+id/et_type"
-        android:hint="@string/type"
-        app:layout_constraintTop_toBottomOf="@id/et_name"
+        android:id="@+id/et_validade"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/validade"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_type"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Edit"
+        android:id="@+id/et_temperature"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/temperatura"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_validade"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Edit"
+        android:id="@+id/et_shelf_life"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/validade"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_temperature"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Edit"
+        android:id="@+id/et_crop"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:hint="@string/safra"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_shelf_life"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
 

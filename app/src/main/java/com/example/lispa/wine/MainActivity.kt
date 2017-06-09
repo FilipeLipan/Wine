@@ -6,14 +6,15 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.view.Menu
 import android.view.MenuItem
+import retrofit2.Call
 import java.lang.reflect.Array
+import retrofit2.Callback
+import retrofit2.Response
 
 
 val listFragmentTAG:String = "listFragmentTAG"
 val addWineFragmentTAG:String = "addWineFragmentTAG"
 class MainActivity : AppCompatActivity() {
-
-    var wines :MutableList<Wine> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         }else{
             fragmentManager.beginTransaction().replace(R.id.container, fragmentManager.findFragmentByTag(listFragmentTAG)).commit();
         }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

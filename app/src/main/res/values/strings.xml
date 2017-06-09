@@ -3,4 +3,8 @@
     <string name="name">Nome</string>
     <string name="type">Tipo</string>
     <string name="add_wine_button_text">Adicionar Vinho</string>
+    <string name="safra">Safra</string>
+    <string name="validade">Validade</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="corte">Corte</string>
 </resources>
